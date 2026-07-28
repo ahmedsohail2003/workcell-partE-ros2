@@ -1,0 +1,15 @@
+# Estimate the 6-DoF pose of a table-resting cube from its segmented point
+# cloud — the perception core of WorkCell Part C (GraspSight), served over ROS 2.
+#
+# The physics constrains the problem: a cube resting on a known table plane has
+# z = table_z + half_extent and roll = pitch = 0, so the estimator solves
+# (x, y, yaw) with a coarse yaw sweep + table-constrained trimmed ICP.
+sensor_msgs/PointCloud2 cloud     # world-frame points of the segmented object
+float64 table_z                   # z of the RANSAC-fitted table plane [m]
+float64 half_extent               # cube half edge length [m]; <= 0 -> 0.012
+---
+geometry_msgs/PoseStamped grasp_pose  # top-down grasp frame at the cube center
+float64 yaw                           # cube yaw [rad], identifiable mod pi/2
+float64 rmse                          # final ICP residual [m]
+int32 iters                           # ICP iterations used
+float64 solve_ms                      # estimator wall time [ms], excl. conversion

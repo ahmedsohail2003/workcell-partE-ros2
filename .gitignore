@@ -1,0 +1,18 @@
+# colcon / ROS 2
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+
+# editor / OS
+.vscode/
+Thumbs.db
+
+# large raw recordings (keep final GIFs in media/)
+*.mp4
+*.webm
+rosbag2_*/
+results/*_record.jsonl

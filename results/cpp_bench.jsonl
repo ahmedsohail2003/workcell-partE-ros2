@@ -1,0 +1,12 @@
+{"cloud": "cloud_00.csv", "n_points": 169, "x": 0.018654, "y": -0.251857, "yaw": 1.510046, "rmse": 0.001287, "iters": 13, "median_ms": 3.355}
+{"cloud": "cloud_01.csv", "n_points": 159, "x": 0.001859, "y": -0.226183, "yaw": 1.368718, "rmse": 0.001112, "iters": 20, "median_ms": 3.457}
+{"cloud": "cloud_02.csv", "n_points": 194, "x": 0.008932, "y": -0.207556, "yaw": 1.200448, "rmse": 0.001266, "iters": 19, "median_ms": 4.046}
+{"cloud": "cloud_03.csv", "n_points": 208, "x": 0.093850, "y": -0.201955, "yaw": 0.353443, "rmse": 0.001101, "iters": 23, "median_ms": 4.552}
+{"cloud": "cloud_04.csv", "n_points": 235, "x": 0.054000, "y": -0.206931, "yaw": 0.539110, "rmse": 0.001034, "iters": 31, "median_ms": 5.575}
+{"cloud": "cloud_05.csv", "n_points": 220, "x": 0.020611, "y": -0.246184, "yaw": 0.445330, "rmse": 0.001007, "iters": 35, "median_ms": 5.275}
+{"cloud": "cloud_06.csv", "n_points": 222, "x": 0.084177, "y": -0.236418, "yaw": 0.766007, "rmse": 0.001103, "iters": 21, "median_ms": 4.705}
+{"cloud": "cloud_07.csv", "n_points": 228, "x": -0.050061, "y": -0.195472, "yaw": 0.826496, "rmse": 0.001146, "iters": 25, "median_ms": 5.088}
+{"cloud": "cloud_08.csv", "n_points": 172, "x": 0.030929, "y": -0.265418, "yaw": 1.421385, "rmse": 0.001343, "iters": 17, "median_ms": 3.243}
+{"cloud": "cloud_09.csv", "n_points": 230, "x": -0.056000, "y": -0.256174, "yaw": 0.737858, "rmse": 0.001281, "iters": 15, "median_ms": 4.422}
+{"cloud": "cloud_10.csv", "n_points": 200, "x": 0.126876, "y": -0.228094, "yaw": 0.720142, "rmse": 0.001164, "iters": 26, "median_ms": 4.702}
+{"cloud": "cloud_11.csv", "n_points": 148, "x": 0.045849, "y": -0.199013, "yaw": 1.475817, "rmse": 0.001074, "iters": 15, "median_ms": 3.502}
