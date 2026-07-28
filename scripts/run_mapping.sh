@@ -65,9 +65,13 @@ log "=== 4/5  saving map -> $MAP_DIR/$MAP_NAME ==="
 run_start_epoch=$(date +%s)
 saved=0
 for attempt in 1 2 3; do
-  if ros2 run nav2_map_server map_saver_cli -f "$MAP_DIR/$MAP_NAME" \
-       --ros-args -p use_sim_time:=true -p save_map_timeout:=15.0 \
-       2>&1 | tee "$LOG_DIR/map_saver.log" | grep -q "Map saved successfully"; then
+  # Write the log to a FILE and grep the file — greping the live pipe is
+  # exactly failure-mode 6 (buffering races) and misreported a successful
+  # save as a failure when this used `| tee | grep -q`.
+  ros2 run nav2_map_server map_saver_cli -f "$MAP_DIR/$MAP_NAME" \
+    --ros-args -p use_sim_time:=true -p save_map_timeout:=15.0 \
+    > "$LOG_DIR/map_saver.log" 2>&1
+  if grep -q "Map saved successfully" "$LOG_DIR/map_saver.log"; then
     saved=1; break
   fi
   log "map_saver attempt $attempt failed, retrying"
