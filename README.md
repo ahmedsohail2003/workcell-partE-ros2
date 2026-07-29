@@ -6,7 +6,8 @@
 > [C · grasping](https://github.com/ahmedsohail2003/workcell-partC-grasping) ·
 > [D · RL + world model](https://github.com/ahmedsohail2003/workcell-partD-rl) ·
 > E · ROS 2 (this repo) ·
-> [datasets & models on 🤗](https://huggingface.co/ahmedsohail2003)
+> [datasets & models on 🤗](https://huggingface.co/ahmedsohail2003) ·
+> **[🌐 portfolio overview](https://ahmedsohail2003.github.io/)** — the whole series on one page
 
 **ROS 2 Jazzy on WSL2: TurtleBot3 SLAM (`slam_toolbox`) → Nav2 autonomous
 navigation, fully scripted end-to-end — plus a C++ port of Part C's 6-DoF
